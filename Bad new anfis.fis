@@ -1,0 +1,54 @@
+[System]
+Name='new anfis'
+Type='sugeno'
+Version=2.0
+NumInputs=5
+NumOutputs=1
+NumRules=2
+AndMethod='prod'
+OrMethod='probor'
+ImpMethod='prod'
+AggMethod='sum'
+DefuzzMethod='wtaver'
+
+[Input1]
+Name='input1'
+Range=[1.7 2.6]
+NumMFs=1
+MF1='in1mf1':'gaussmf',[Inf 2.6]
+
+[Input2]
+Name='input2'
+Range=[5.9 9.9]
+NumMFs=2
+MF1='in2mf1':'gaussmf',[1.58649852597206 5.69506779115173]
+MF2='in2mf2':'gaussmf',[1.75392556439196 9.73033868755721]
+
+[Input3]
+Name='input3'
+Range=[1.1 2.4]
+NumMFs=1
+MF1='in3mf1':'gaussmf',[Inf 2.4]
+
+[Input4]
+Name='input4'
+Range=[1.5 3.1]
+NumMFs=1
+MF1='in4mf1':'gaussmf',[Inf 3.1]
+
+[Input5]
+Name='input5'
+Range=[12 16.5]
+NumMFs=1
+MF1='in5mf1':'gaussmf',[Inf 16.5]
+
+[Output1]
+Name='output'
+Range=[0.144 0.87]
+NumMFs=2
+MF1='out1mf1':'linear',[2.38015563701974 2.95106742010693 2.33901300969042 4.50824397342356 -3.27253164662933 2.81389567648546]
+MF2='out1mf2':'linear',[0.327840018177463 0.0773916476418466 0.714151620134188 0.211982444115467 -0.103945293899998 -0.555411755435487]
+
+[Rules]
+1 1 1 1 1, 1 (1) : 1
+1 2 1 1 1, 2 (1) : 1

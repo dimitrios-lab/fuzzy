@@ -1,0 +1,87 @@
+[System]
+Name='ShakespSiSPrimaryExp'
+Type='mamdani'
+Version=2.0
+NumInputs=6
+NumOutputs=1
+NumRules=14
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='Set1'
+Range=[0 10]
+NumMFs=7
+MF1='1a':'trapmf',[1.8 1.9 2.1 2.2]
+MF2='1b':'trapmf',[2.21 2.3 2.4 2.47]
+MF3='1c':'trapmf',[2.53 2.6 2.7 2.77]
+MF4='1NONEa':'trapmf',[0 0 1.8 1.9]
+MF5='1NONEb':'trapmf',[2.1 2.2 2.21 2.3]
+MF6='1NONEc':'trapmf',[2.46 2.47 2.53 2.54]
+MF7='1NONEd':'trapmf',[2.76 2.77 100 100]
+
+[Input2]
+Name='Set2'
+Range=[0 12]
+NumMFs=9
+MF1='2a':'trimf',[5.57 6.7 7.83]
+MF2='2b':'trapmf',[8.13 8.2 8.3 8.37]
+MF3='2c':'trapmf',[8.43 8.5 8.6 8.67]
+MF4='2d':'trimf',[8.94 9.15 9.36]
+MF5='2Nonea':'trapmf',[0 0 5.57 5.58]
+MF6='2Noneb':'trapmf',[7.82 7.83 8.13 8.14]
+MF7='2Nonec':'trapmf',[8.36 8.37 8.43 8.44]
+MF8='2Noned':'trapmf',[8.66 8.67 8.94 8.95]
+MF9='2Nonee':'trapmf',[9.35 9.36 100 100]
+
+[Input3]
+Name='Set3'
+Range=[0 1]
+NumMFs=1
+MF1='Actual':'trapmf',[0.093 0.1 0.3 0.37]
+
+[Input4]
+Name='Set4'
+Range=[0 10]
+NumMFs=1
+MF1='Actual':'trimf',[2.48 2.74 3]
+
+[Input5]
+Name='Set5'
+Range=[0 3]
+NumMFs=1
+MF1='Actual':'trimf',[0.94 1.155 1.37]
+
+[Input6]
+Name='Set6'
+Range=[0 1]
+NumMFs=1
+MF1='Actual':'trimf',[0.275 0.44 0.59]
+
+[Output1]
+Name='SIS'
+Range=[0 1]
+NumMFs=4
+MF1='SISLOW':'trapmf',[0 0.125 0.25 0.26]
+MF2='SISMED1':'trapmf',[0.1875 0.3725 0.5 0.51]
+MF3='SISMED2':'trapmf',[0.4375 0.625 0.75 0.76]
+MF4='SISHIGH':'trapmf',[0.6875 0.875 1 1.1]
+
+[Rules]
+3 2 1 1 1 1, 4 (1) : 1
+3 3 1 1 1 1, 4 (1) : 1
+3 4 1 1 1 1, 4 (1) : 1
+1 4 1 1 1 1, 4 (1) : 1
+1 3 1 1 1 1, 4 (1) : 1
+2 2 1 1 1 1, 4 (1) : 1
+1 1 1 1 1 1, 4 (1) : 1
+1 2 1 1 1 1, 4 (1) : 1
+2 1 1 1 -1 1, 3 (1) : 1
+6 2 1 -1 1 1, 2 (1) : 1
+4 1 1 -1 1 1, 3 (1) : 1
+1 5 1 1 1 1, 1 (1) : 1
+4 5 1 1 1 1, 1 (1) : 1
+4 1 -1 1 1 1, 2 (1) : 1

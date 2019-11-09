@@ -1,0 +1,37 @@
+[System]
+Name='fan4118grams'
+Type='mamdani'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=2
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='Temperature'
+Range=[-5 45]
+NumMFs=2
+MF1='Medium':'trapmf',[12 18 25 37]
+MF2='High':'trapmf',[28 38 46 46]
+
+[Input2]
+Name='Humidity'
+Range=[0 24]
+NumMFs=2
+MF1='Medium_Humidity':'trapmf',[4 14 17 20]
+MF2='High_Humidity':'trapmf',[17 20 23 24]
+
+[Output1]
+Name='Rotations/Minute'
+Range=[0 250]
+NumMFs=2
+MF1='Medium_Speed':'trimf',[84.38 166.7 166.7]
+MF2='High_Speed':'trimf',[149 221 221]
+
+[Rules]
+2 2, 2 (1) : 1
+1 1, 1 (1) : 1
