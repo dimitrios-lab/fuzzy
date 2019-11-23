@@ -9,10 +9,10 @@ All webm files are also video files from actual experimentation (though with som
 For instance, ¨"Fan example with 2 rules and 2 inputs.webm" is a video file. 
 
 Other webm(-video) files are:
-Edward II--Validation Stage--Histories
-A Measure For Measure --Comedies--Testing Stage
-Testing Three Plays in the Primary Experimentation
-Comparison of rules between Primary and Core Experimentation
+Edward II--Validation Stage--Histories, 
+A Measure For Measure --Comedies--Testing Stage, 
+Testing Three Plays in the Primary Experimentation, 
+Comparison of rules between Primary and Core Experimentation. 
 }
 
 GENERAL NOTE
