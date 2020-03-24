@@ -7,9 +7,7 @@ GENERAL NOTE
 Various files are uploaded. Some of them contain files that present the statistical data (e.g. the indices of cosine similarity
 of the plays) of the experimentation, some others the Matlab scripts, whereas there are also documents which contain 
 the printout of the Ant Software regarding the measurement of the counts (hits) of the semantic sets of the 100 words 
-(in core experimentation) and the words' frequencies' themselves. In addition, there are some explanatory videos that 
-display issues of the fuzzification and defuzzification process and the way the results-are produced during the experimentation
-in the so-called Validation-Stage 2 or Testing Stage (with non-sole-authored and non-well-attributed Shakespearean plays).
+(in core experimentation) and the words' frequencies' themselves. 
 
 SPECIFIC NOTE
 The file that contains the ‘data and statistics of the core experimentation.xslx’ in its first sheet has the counts of
