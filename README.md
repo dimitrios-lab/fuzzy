@@ -1,18 +1,6 @@
 # fuzzy
 
 
-{
-Titus Andronicus--Tragedies-Classifier--36R.rar contains a video file.
- 
-All webm files are also video files from actual experimentation (though with some adjustments for reasons of space, <25 MB)
-
-For instance, ¨"Fan example with 2 rules and 2 inputs.webm" is a video file. 
-
-Other webm(-video) files are:
-Edward II--Validation Stage--Histories, 
-A Measure For Measure --Comedies--Testing Stage, 
-Testing Three Plays in the Primary Experimentation.
-}
 
 GENERAL NOTE
 
@@ -32,13 +20,4 @@ cases in the experimentation with the ‘Ant’ Software when counting the four 
 subsets) in comparison with the four sets-based measurements there is a slight difference (0.1) for the count of Set Three and 
 perhaps the count of the total set. This is generally a minor problem and it does not seem to affect dramatically the formation 
 of the edges of classes. In general, effort was put to adopt the second measurements (of the six sets for more precision) for the 
-modelling of the known plays apart from cases where it could be possible to include it in a trapezoidal class. (For instance, in 
-Henry IV, Part II the two measurements provide for Set Three the data point of 1.7 and 1.8 and since there is already a count of 
-another play for Set Three that is 1.8. in that case, the measurement of 1.7 was preferred because it contributes to the 
-formation of a duplet and covers the uncertainty from every aspect). The plays in the validation and testing stage were measured
-and mapped based on the counts of the four sets since only one plays’ counts (Timon of Athens) differed when measured as 
-four sets and as four sets with the counts of the third set being composed of the counts of other three subsets. 
-This difference with the sets counts is due to the fact that at the first level (graphical output with layers) there is 
-a rounding at the first digit. Sometimes, the rounding of the four sets as four and six sets (Set three of three subsets) 
-differs influencing also the counts of the total set.
-
+modelling of the known plays apart from cases where it could be possible to include it in a trapezoidal class.
