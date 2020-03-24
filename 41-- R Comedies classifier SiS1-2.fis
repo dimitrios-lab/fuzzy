@@ -1,0 +1,142 @@
+[System]
+Name='41-- R Comedies classifier SiS1-2'
+Type='mamdani'
+Version=2.0
+NumInputs=7
+NumOutputs=2
+NumRules=41
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='Set1'
+Range=[0 10]
+NumMFs=5
+MF1='1a':'trimf',[1.79 1.9 2.01]
+MF2='1b':'trimf',[2.04 2.37 2.71]
+MF3='nota':'trapmf',[0 0 1.7 1.81]
+MF4='notb':'trapmf',[1.99 2.1 2.11 2.2]
+MF5='notc':'trapmf',[2.54 2.71 100 100]
+
+[Input2]
+Name='Set2'
+Range=[0 20]
+NumMFs=7
+MF1='2nota':'trapmf',[0 0 6 6.1]
+MF2='2notb':'trapmf',[6.29 6.4 7.69 8.02]
+MF3='2notc':'trapmf',[9.88 10.14 100 100]
+MF4='2a':'trimf',[6.09 6.2 6.31]
+MF5='2b':'trimf',[7.69 8.35 9.01]
+MF6='2c':'trapmf',[8.94 9 9.2 9.26]
+MF7='2d':'trimf',[9.13 9.63 10.14]
+
+[Input3]
+Name='Set3'
+Range=[0 10]
+NumMFs=3
+MF1='3':'trimf',[1.32 1.71 2.094]
+MF2='3nota':'trapmf',[0 0 1.32 1.52]
+MF3='3notb':'trapmf',[1.901 2.094 100 100]
+
+[Input4]
+Name='Set4'
+Range=[0 10]
+NumMFs=5
+MF1='4a':'trapmf',[1.94 2 2.1 2.16]
+MF2='4b':'trimf',[2.27 2.59 2.91]
+MF3='4nota':'trapmf',[0 0 1.95 2]
+MF4='4notb':'trapmf',[2.15 2.2 2.27 2.425]
+MF5='4notc':'trapmf',[2.75 2.91 100 100]
+
+[Input5]
+Name='Set5'
+Range=[0 20]
+NumMFs=8
+MF1='5a':'trimf',[11.89 12.1 12.21]
+MF2='5b':'trimf',[14.43 14.93 15.43]
+MF3='5c':'trapmf',[15.39 15.5 15.7 15.81]
+MF4='5d':'trapmf',[15.79 15.9 16.1 16.21]
+MF5='5nota':'trapmf',[0 0 11.8 11.91]
+MF6='5notb':'trapmf',[12.19 12.3 14.43 14.68]
+MF7='5notc':'trimf',[15.18 15.43 15.43]
+MF8='5notd':'trapmf',[16.19 16.3 100 100]
+
+[Input6]
+Name='SiS1asInput'
+Range=[0 1]
+NumMFs=4
+MF1='SISLOW':'trapmf',[0 0.125 0.25 0.26]
+MF2='SISMED1':'trapmf',[0.1875 0.3725 0.5 0.51]
+MF3='SISMED2':'trapmf',[0.4375 0.625 0.75 0.76]
+MF4='SISHIGH':'trapmf',[0.6875 0.875 1 1]
+
+[Input7]
+Name='CosSim'
+Range=[0 1]
+NumMFs=2
+MF1='LowCos':'trimf',[0 0.884 0.885]
+MF2='HighCos':'trapmf',[0.884 0.968 1 1]
+
+[Output1]
+Name='SIS'
+Range=[0 1]
+NumMFs=4
+MF1='SISLOW':'trapmf',[0 0.125 0.25 0.26]
+MF2='SISMED1':'trapmf',[0.1875 0.3725 0.5 0.51]
+MF3='SISMED2':'trapmf',[0.4375 0.625 0.75 0.76]
+MF4='SISHIGH':'trapmf',[0.6875 0.875 1 1]
+
+[Output2]
+Name='SIS2'
+Range=[0 1]
+NumMFs=4
+MF1='SISLOW':'trapmf',[0 0.125 0.25 0.26]
+MF2='SISMED1':'trapmf',[0.1875 0.3725 0.5 0.51]
+MF3='SISMED2':'trapmf',[0.4375 0.625 0.75 0.76]
+MF4='SISHIGH':'trapmf',[0.6875 0.875 1 1]
+
+[Rules]
+2 6 1 2 0 0 0, 4 0 (1) : 1
+2 7 1 2 0 0 0, 4 0 (1) : 1
+1 4 1 2 0 0 0, 4 0 (1) : 1
+2 5 1 2 0 0 0, 4 0 (1) : 1
+2 6 1 1 0 0 0, 4 0 (1) : 1
+2 7 1 1 0 0 0, 4 0 (1) : 1
+3 4 1 1 0 0 0, 3 0 (1) : 1
+1 1 1 1 0 0 0, 1 0 (1) : 1
+3 1 1 1 0 0 0, 1 0 (1) : 1
+3 4 2 1 0 0 0, 1 0 (1) : 1
+3 1 2 1 0 0 0, 1 0 (1) : 1
+3 1 1 3 0 0 0, 1 0 (1) : 1
+5 6 1 2 0 0 0, 3 0 (1) : 1
+5 5 1 2 0 0 0, 3 0 (1) : 1
+1 4 2 2 0 0 0, 3 0 (1) : 1
+2 2 1 2 0 0 0, 1 0 (1) : 1
+2 5 3 2 0 0 0, 3 0 (1) : 1
+4 2 1 1 0 0 0, 1 0 (1) : 1
+5 5 1 5 0 0 0, 2 0 (1) : 1
+2 6 1 4 0 0 0, 3 0 (1) : 1
+2 5 1 5 0 0 0, 3 0 (1) : 1
+2 5 2 1 0 0 0, 3 0 (1) : 1
+4 2 2 1 0 0 0, 1 0 (1) : 1
+4 5 2 1 0 0 0, 2 0 (1) : 1
+2 2 2 1 0 0 0, 1 0 (1) : 1
+1 5 1 2 0 0 0, 4 0 (1) : 1
+1 5 1 4 0 0 0, 3 0 (1) : 1
+3 5 1 2 0 0 0, 3 0 (1) : 1
+3 5 1 4 0 0 0, 2 0 (1) : 1
+0 0 0 0 1 4 2, 0 4 (1) : 1
+0 0 0 0 6 1 2, 0 1 (1) : 1
+0 0 0 0 6 2 2, 0 2 (1) : 1
+0 0 0 0 6 2 2, 0 1 (1) : 1
+0 0 0 0 6 3 2, 0 3 (1) : 1
+0 0 0 0 6 3 2, 0 2 (1) : 1
+4 5 2 3 0 0 0, 1 0 (1) : 1
+2 5 2 3 0 0 0, 2 0 (1) : 1
+2 5 2 2 0 0 0, 3 0 (1) : 1
+2 5 2 5 0 0 0, 2 0 (1) : 1
+0 0 0 0 2 3 2, 0 3 (1) : 1
+0 0 0 0 2 3 2, 0 4 (1) : 1
